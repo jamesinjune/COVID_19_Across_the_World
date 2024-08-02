@@ -1,0 +1,577 @@
+,country,year,hdi
+0,Afghanistan,2020,0.488
+1,Afghanistan,2021,0.473
+2,Afghanistan,2022,0.462
+3,Albania,2020,0.784
+4,Albania,2021,0.785
+5,Albania,2022,0.789
+6,Algeria,2020,0.73
+7,Algeria,2021,0.74
+8,Algeria,2022,0.745
+9,Andorra,2020,0.843
+10,Andorra,2021,0.855
+11,Andorra,2022,0.884
+12,Angola,2020,0.594
+13,Angola,2021,0.59
+14,Angola,2022,0.591
+15,Antigua and Barbuda,2020,0.82
+16,Antigua and Barbuda,2021,0.819
+17,Antigua and Barbuda,2022,0.826
+18,Argentina,2020,0.841
+19,Argentina,2021,0.844
+20,Argentina,2022,0.849
+21,Armenia,2020,0.769
+22,Armenia,2021,0.774
+23,Armenia,2022,0.786
+24,Australia,2020,0.948
+25,Australia,2021,0.949
+26,Australia,2022,0.946
+27,Austria,2020,0.916
+28,Austria,2021,0.92
+29,Austria,2022,0.926
+30,Azerbaijan,2020,0.722
+31,Azerbaijan,2021,0.738
+32,Azerbaijan,2022,0.76
+33,Bahamas,2020,0.798
+34,Bahamas,2021,0.799
+35,Bahamas,2022,0.82
+36,Bahrain,2020,0.884
+37,Bahrain,2021,0.884
+38,Bahrain,2022,0.888
+39,Bangladesh,2020,0.657
+40,Bangladesh,2021,0.662
+41,Bangladesh,2022,0.67
+42,Barbados,2020,0.803
+43,Barbados,2021,0.803
+44,Barbados,2022,0.809
+45,Belarus,2020,0.8
+46,Belarus,2021,0.801
+47,Belarus,2022,0.801
+48,Belgium,2020,0.93
+49,Belgium,2021,0.938
+50,Belgium,2022,0.942
+51,Belize,2020,0.705
+52,Belize,2021,0.698
+53,Belize,2022,0.7
+54,Benin,2020,0.501
+55,Benin,2021,0.502
+56,Benin,2022,0.504
+57,Bhutan,2020,0.675
+58,Bhutan,2021,0.677
+59,Bhutan,2022,0.681
+60,Bolivia,2020,0.691
+61,Bolivia,2021,0.691
+62,Bolivia,2022,0.698
+63,Bosnia and Herzegovina,2020,0.776
+64,Bosnia and Herzegovina,2021,0.776
+65,Bosnia and Herzegovina,2022,0.779
+66,Botswana,2020,0.701
+67,Botswana,2021,0.68
+68,Botswana,2022,0.708
+69,Brazil,2020,0.758
+70,Brazil,2021,0.756
+71,Brazil,2022,0.76
+72,Brunei Darussalam,2020,0.827
+73,Brunei Darussalam,2021,0.824
+74,Brunei Darussalam,2022,0.823
+75,Bulgaria,2020,0.802
+76,Bulgaria,2021,0.796
+77,Bulgaria,2022,0.799
+78,Burkina Faso,2020,0.446
+79,Burkina Faso,2021,0.445
+80,Burkina Faso,2022,0.438
+81,Burundi,2020,0.419
+82,Burundi,2021,0.419
+83,Burundi,2022,0.42
+84,Cabo Verde,2020,0.649
+85,Cabo Verde,2021,0.65
+86,Cabo Verde,2022,0.661
+87,Cambodia,2020,0.596
+88,Cambodia,2021,0.596
+89,Cambodia,2022,0.6
+90,Cameroon,2020,0.585
+91,Cameroon,2021,0.581
+92,Cameroon,2022,0.587
+93,Canada,2020,0.928
+94,Canada,2021,0.934
+95,Canada,2022,0.935
+96,Central African Republic,2020,0.389
+97,Central African Republic,2021,0.387
+98,Central African Republic,2022,0.387
+99,Chad,2020,0.396
+100,Chad,2021,0.393
+101,Chad,2022,0.394
+102,Chile,2020,0.849
+103,Chile,2021,0.856
+104,Chile,2022,0.86
+105,China,2020,0.781
+106,China,2021,0.785
+107,China,2022,0.788
+108,Colombia,2020,0.756
+109,Colombia,2021,0.752
+110,Colombia,2022,0.758
+111,Comoros,2020,0.588
+112,Comoros,2021,0.585
+113,Comoros,2022,0.586
+114,Congo Republic,2020,0.598
+115,Congo Republic,2021,0.598
+116,Congo Republic,2022,0.593
+117,Costa Rica,2020,0.811
+118,Costa Rica,2021,0.804
+119,Costa Rica,2022,0.806
+120,Cote d'Ivoire,2020,0.53
+121,Cote d'Ivoire,2021,0.53
+122,Cote d'Ivoire,2022,0.534
+123,Croatia,2020,0.86
+124,Croatia,2021,0.867
+125,Croatia,2022,0.878
+126,Cuba,2020,0.759
+127,Cuba,2021,0.742
+128,Cuba,2022,0.764
+129,Cyprus,2020,0.9
+130,Cyprus,2021,0.901
+131,Cyprus,2022,0.907
+132,Czechia,2020,0.891
+133,Czechia,2021,0.891
+134,Czechia,2022,0.895
+135,DR Congo,2020,0.477
+136,DR Congo,2021,0.475
+137,DR Congo,2022,0.481
+138,Denmark,2020,0.946
+139,Denmark,2021,0.947
+140,Denmark,2022,0.952
+141,Djibouti,2020,0.512
+142,Djibouti,2021,0.512
+143,Djibouti,2022,0.515
+144,Dominica,2020,0.738
+145,Dominica,2021,0.737
+146,Dominica,2022,0.74
+147,Dominican Republic,2020,0.76
+148,Dominican Republic,2021,0.756
+149,Dominican Republic,2022,0.766
+150,Ecuador,2020,0.734
+151,Ecuador,2021,0.746
+152,Ecuador,2022,0.765
+153,Egypt,2020,0.729
+154,Egypt,2021,0.726
+155,Egypt,2022,0.728
+156,El Salvador,2020,0.666
+157,El Salvador,2021,0.669
+158,El Salvador,2022,0.674
+159,Equatorial Guinea,2020,0.65
+160,Equatorial Guinea,2021,0.647
+161,Equatorial Guinea,2022,0.65
+162,Eritrea,2020,0.49
+163,Eritrea,2021,0.49
+164,Eritrea,2022,0.493
+165,Estonia,2020,0.891
+166,Estonia,2021,0.89
+167,Estonia,2022,0.899
+168,Eswatini,2020,0.622
+169,Eswatini,2021,0.612
+170,Eswatini,2022,0.61
+171,Ethiopia,2020,0.489
+172,Ethiopia,2021,0.489
+173,Ethiopia,2022,0.492
+174,Fiji,2020,0.722
+175,Fiji,2021,0.715
+176,Fiji,2022,0.729
+177,Finland,2020,0.939
+178,Finland,2021,0.941
+179,Finland,2022,0.942
+180,France,2020,0.9
+181,France,2021,0.906
+182,France,2022,0.91
+183,Gabon,2020,0.704
+184,Gabon,2021,0.687
+185,Gabon,2022,0.693
+186,Gambia,2020,0.492
+187,Gambia,2021,0.49
+188,Gambia,2022,0.495
+189,Georgia,2020,0.807
+190,Georgia,2021,0.809
+191,Georgia,2022,0.814
+192,Germany,2020,0.948
+193,Germany,2021,0.948
+194,Germany,2022,0.95
+195,Ghana,2020,0.601
+196,Ghana,2021,0.6
+197,Ghana,2022,0.602
+198,Greece,2020,0.887
+199,Greece,2021,0.887
+200,Greece,2022,0.893
+201,Grenada,2020,0.786
+202,Grenada,2021,0.788
+203,Grenada,2022,0.793
+204,Guatemala,2020,0.638
+205,Guatemala,2021,0.63
+206,Guatemala,2022,0.629
+207,Guinea,2020,0.471
+208,Guinea,2021,0.467
+209,Guinea,2022,0.471
+210,Guinea-Bissau,2020,0.482
+211,Guinea-Bissau,2021,0.482
+212,Guinea-Bissau,2022,0.483
+213,Guyana,2020,0.727
+214,Guyana,2021,0.721
+215,Guyana,2022,0.742
+216,Haiti,2020,0.557
+217,Haiti,2021,0.551
+218,Haiti,2022,0.552
+219,Honduras,2020,0.621
+220,Honduras,2021,0.62
+221,Honduras,2022,0.624
+222,Hong Kong,2020,0.955
+223,Hong Kong,2021,0.959
+224,Hong Kong,2022,0.956
+225,Hungary,2020,0.849
+226,Hungary,2021,0.846
+227,Hungary,2022,0.851
+228,Iceland,2020,0.955
+229,Iceland,2021,0.957
+230,Iceland,2022,0.959
+231,India,2020,0.638
+232,India,2021,0.633
+233,India,2022,0.644
+234,Indonesia,2020,0.712
+235,Indonesia,2021,0.707
+236,Indonesia,2022,0.713
+237,Iran,2020,0.779
+238,Iran,2021,0.776
+239,Iran,2022,0.78
+240,Iraq,2020,0.661
+241,Iraq,2021,0.667
+242,Iraq,2022,0.673
+243,Ireland,2020,0.945
+244,Ireland,2021,0.946
+245,Ireland,2022,0.95
+246,Israel,2020,0.906
+247,Israel,2021,0.911
+248,Israel,2022,0.915
+249,Italy,2020,0.892
+250,Italy,2021,0.899
+251,Italy,2022,0.906
+252,Jamaica,2020,0.707
+253,Jamaica,2021,0.704
+254,Jamaica,2022,0.706
+255,Japan,2020,0.917
+256,Japan,2021,0.92
+257,Japan,2022,0.92
+258,Jordan,2020,0.74
+259,Jordan,2021,0.736
+260,Jordan,2022,0.736
+261,Kazakhstan,2020,0.806
+262,Kazakhstan,2021,0.801
+263,Kazakhstan,2022,0.802
+264,Kenya,2020,0.599
+265,Kenya,2021,0.596
+266,Kenya,2022,0.601
+267,Kiribati,2020,0.629
+268,Kiribati,2021,0.627
+269,Kiribati,2022,0.628
+270,Kuwait,2020,0.826
+271,Kuwait,2021,0.836
+272,Kuwait,2022,0.847
+273,Kyrgyz Republic,2020,0.691
+274,Kyrgyz Republic,2021,0.696
+275,Kyrgyz Republic,2022,0.701
+276,Laos,2020,0.616
+277,Laos,2021,0.615
+278,Laos,2022,0.62
+279,Latvia,2020,0.873
+280,Latvia,2021,0.865
+281,Latvia,2022,0.879
+282,Lebanon,2020,0.742
+283,Lebanon,2021,0.725
+284,Lebanon,2022,0.723
+285,Lesotho,2020,0.53
+286,Lesotho,2021,0.522
+287,Lesotho,2022,0.521
+288,Liberia,2020,0.483
+289,Liberia,2021,0.484
+290,Liberia,2022,0.487
+291,Libya,2020,0.737
+292,Libya,2021,0.746
+293,Libya,2022,0.746
+294,Liechtenstein,2020,0.933
+295,Liechtenstein,2021,0.936
+296,Liechtenstein,2022,0.942
+297,Lithuania,2020,0.88
+298,Lithuania,2021,0.875
+299,Lithuania,2022,0.879
+300,Luxembourg,2020,0.921
+301,Luxembourg,2021,0.927
+302,Luxembourg,2022,0.927
+303,Madagascar,2020,0.486
+304,Madagascar,2021,0.484
+305,Madagascar,2022,0.487
+306,Malawi,2020,0.512
+307,Malawi,2021,0.509
+308,Malawi,2022,0.508
+309,Malaysia,2020,0.802
+310,Malaysia,2021,0.798
+311,Malaysia,2022,0.807
+312,Maldives,2020,0.737
+313,Maldives,2021,0.753
+314,Maldives,2022,0.762
+315,Mali,2020,0.407
+316,Mali,2021,0.408
+317,Mali,2022,0.41
+318,Malta,2020,0.901
+319,Malta,2021,0.912
+320,Malta,2022,0.915
+321,Marshall Islands,2020,0.727
+322,Marshall Islands,2021,0.729
+323,Marshall Islands,2022,0.731
+324,Mauritania,2020,0.539
+325,Mauritania,2021,0.538
+326,Mauritania,2022,0.54
+327,Mauritius,2020,0.792
+328,Mauritius,2021,0.79
+329,Mauritius,2022,0.796
+330,Mexico,2020,0.757
+331,Mexico,2021,0.757
+332,Mexico,2022,0.781
+333,"Micronesia, Fed. Sts.",2020,0.636
+334,"Micronesia, Fed. Sts.",2021,0.634
+335,"Micronesia, Fed. Sts.",2022,0.634
+336,Moldova,2020,0.765
+337,Moldova,2021,0.767
+338,Moldova,2022,0.763
+339,Mongolia,2020,0.74
+340,Mongolia,2021,0.73
+341,Mongolia,2022,0.741
+342,Montenegro,2020,0.832
+343,Montenegro,2021,0.84
+344,Montenegro,2022,0.844
+345,Morocco,2020,0.683
+346,Morocco,2021,0.688
+347,Morocco,2022,0.698
+348,Mozambique,2020,0.467
+349,Mozambique,2021,0.459
+350,Mozambique,2022,0.461
+351,Myanmar,2020,0.615
+352,Myanmar,2021,0.599
+353,Myanmar,2022,0.608
+354,Namibia,2020,0.634
+355,Namibia,2021,0.616
+356,Namibia,2022,0.61
+357,Nauru,2020,0.689
+358,Nauru,2021,0.693
+359,Nauru,2022,0.696
+360,Nepal,2020,0.593
+361,Nepal,2021,0.591
+362,Nepal,2022,0.601
+363,Netherlands,2020,0.938
+364,Netherlands,2021,0.941
+365,Netherlands,2022,0.946
+366,New Zealand,2020,0.935
+367,New Zealand,2021,0.936
+368,New Zealand,2022,0.939
+369,Nicaragua,2020,0.652
+370,Nicaragua,2021,0.665
+371,Nicaragua,2022,0.669
+372,Niger,2020,0.391
+373,Niger,2021,0.389
+374,Niger,2022,0.394
+375,Nigeria,2020,0.539
+376,Nigeria,2021,0.542
+377,Nigeria,2022,0.548
+378,North Macedonia,2020,0.766
+379,North Macedonia,2021,0.764
+380,North Macedonia,2022,0.765
+381,Norway,2020,0.963
+382,Norway,2021,0.964
+383,Norway,2022,0.966
+384,Oman,2020,0.823
+385,Oman,2021,0.81
+386,Oman,2022,0.819
+387,Pakistan,2020,0.536
+388,Pakistan,2021,0.537
+389,Pakistan,2022,0.54
+390,Palau,2020,0.794
+391,Palau,2021,0.802
+392,Palau,2022,0.797
+393,Palestine,2020,0.715
+394,Palestine,2021,0.715
+395,Palestine,2022,0.716
+396,Panama,2020,0.809
+397,Panama,2021,0.813
+398,Panama,2022,0.82
+399,Papua New Guinea,2020,0.567
+400,Papua New Guinea,2021,0.564
+401,Papua New Guinea,2022,0.568
+402,Paraguay,2020,0.742
+403,Paraguay,2021,0.73
+404,Paraguay,2022,0.731
+405,Peru,2020,0.758
+406,Peru,2021,0.755
+407,Peru,2022,0.762
+408,Philippines,2020,0.705
+409,Philippines,2021,0.692
+410,Philippines,2022,0.71
+411,Poland,2020,0.874
+412,Poland,2021,0.876
+413,Poland,2022,0.881
+414,Portugal,2020,0.861
+415,Portugal,2021,0.865
+416,Portugal,2022,0.874
+417,Qatar,2020,0.863
+418,Qatar,2021,0.864
+419,Qatar,2022,0.875
+420,Romania,2020,0.828
+421,Romania,2021,0.825
+422,Romania,2022,0.827
+423,Russia,2020,0.826
+424,Russia,2021,0.818
+425,Russia,2022,0.821
+426,Rwanda,2020,0.535
+427,Rwanda,2021,0.539
+428,Rwanda,2022,0.548
+429,Samoa,2020,0.712
+430,Samoa,2021,0.708
+431,Samoa,2022,0.702
+432,San Marino,2020,0.844
+433,San Marino,2021,0.853
+434,San Marino,2022,0.867
+435,Sao Tome and Principe,2020,0.609
+436,Sao Tome and Principe,2021,0.609
+437,Sao Tome and Principe,2022,0.613
+438,Saudi Arabia,2020,0.861
+439,Saudi Arabia,2021,0.867
+440,Saudi Arabia,2022,0.875
+441,Senegal,2020,0.514
+442,Senegal,2021,0.512
+443,Senegal,2022,0.517
+444,Serbia,2020,0.806
+445,Serbia,2021,0.804
+446,Serbia,2022,0.805
+447,Seychelles,2020,0.799
+448,Seychelles,2021,0.795
+449,Seychelles,2022,0.802
+450,Sierra Leone,2020,0.453
+451,Sierra Leone,2021,0.456
+452,Sierra Leone,2022,0.458
+453,Singapore,2020,0.942
+454,Singapore,2021,0.942
+455,Singapore,2022,0.949
+456,Slovakia,2020,0.86
+457,Slovakia,2021,0.852
+458,Slovakia,2022,0.855
+459,Slovenia,2020,0.91
+460,Slovenia,2021,0.916
+461,Slovenia,2022,0.926
+462,Solomon Islands,2020,0.566
+463,Solomon Islands,2021,0.564
+464,Solomon Islands,2022,0.562
+465,South Africa,2020,0.722
+466,South Africa,2021,0.721
+467,South Africa,2022,0.717
+468,South Korea,2020,0.922
+469,South Korea,2021,0.926
+470,South Korea,2022,0.929
+471,South Sudan,2020,0.386
+472,South Sudan,2021,0.381
+473,South Sudan,2022,0.381
+474,Spain,2020,0.894
+475,Spain,2021,0.904
+476,Spain,2022,0.911
+477,Sri Lanka,2020,0.777
+478,Sri Lanka,2021,0.783
+479,Sri Lanka,2022,0.78
+480,St. Kitts and Nevis,2020,0.832
+481,St. Kitts and Nevis,2021,0.832
+482,St. Kitts and Nevis,2022,0.838
+483,St. Lucia,2020,0.724
+484,St. Lucia,2021,0.717
+485,St. Lucia,2022,0.725
+486,St. Vincent and the Grenadines,2020,0.785
+487,St. Vincent and the Grenadines,2021,0.773
+488,St. Vincent and the Grenadines,2022,0.772
+489,Sudan,2020,0.518
+490,Sudan,2021,0.516
+491,Sudan,2022,0.516
+492,Suriname,2020,0.702
+493,Suriname,2021,0.689
+494,Suriname,2022,0.69
+495,Sweden,2020,0.944
+496,Sweden,2021,0.949
+497,Sweden,2022,0.952
+498,Switzerland,2020,0.957
+499,Switzerland,2021,0.965
+500,Switzerland,2022,0.967
+501,Syria,2020,0.561
+502,Syria,2021,0.558
+503,Syria,2022,0.557
+504,Tajikistan,2020,0.656
+505,Tajikistan,2021,0.677
+506,Tajikistan,2022,0.679
+507,Tanzania,2020,0.535
+508,Tanzania,2021,0.529
+509,Tanzania,2022,0.532
+510,Thailand,2020,0.8
+511,Thailand,2021,0.797
+512,Thailand,2022,0.803
+513,Timor-Leste,2020,0.633
+514,Timor-Leste,2021,0.574
+515,Timor-Leste,2022,0.566
+516,Togo,2020,0.54
+517,Togo,2021,0.545
+518,Togo,2022,0.547
+519,Tonga,2020,0.742
+520,Tonga,2021,0.738
+521,Tonga,2022,0.739
+522,Trinidad and Tobago,2020,0.815
+523,Trinidad and Tobago,2021,0.804
+524,Trinidad and Tobago,2022,0.814
+525,Tunisia,2020,0.734
+526,Tunisia,2021,0.729
+527,Tunisia,2022,0.732
+528,Turkmenistan,2020,0.731
+529,Turkmenistan,2021,0.74
+530,Turkmenistan,2022,0.744
+531,Tuvalu,2020,0.655
+532,Tuvalu,2021,0.653
+533,Tuvalu,2022,0.653
+534,Türkiye,2020,0.835
+535,Türkiye,2021,0.841
+536,Türkiye,2022,0.855
+537,Uganda,2020,0.545
+538,Uganda,2021,0.545
+539,Uganda,2022,0.55
+540,Ukraine,2020,0.762
+541,Ukraine,2021,0.755
+542,Ukraine,2022,0.734
+543,United Arab Emirates,2020,0.93
+544,United Arab Emirates,2021,0.931
+545,United Arab Emirates,2022,0.937
+546,United Kingdom,2020,0.92
+547,United Kingdom,2021,0.931
+548,United Kingdom,2022,0.94
+549,United States,2020,0.923
+550,United States,2021,0.921
+551,United States,2022,0.927
+552,Uruguay,2020,0.82
+553,Uruguay,2021,0.814
+554,Uruguay,2022,0.83
+555,Uzbekistan,2020,0.716
+556,Uzbekistan,2021,0.721
+557,Uzbekistan,2022,0.727
+558,Vanuatu,2020,0.612
+559,Vanuatu,2021,0.614
+560,Vanuatu,2022,0.614
+561,Venezuela,2020,0.691
+562,Venezuela,2021,0.69
+563,Venezuela,2022,0.699
+564,Vietnam,2020,0.726
+565,Vietnam,2021,0.718
+566,Vietnam,2022,0.726
+567,Yemen,2020,0.43
+568,Yemen,2021,0.425
+569,Yemen,2022,0.424
+570,Zambia,2020,0.569
+571,Zambia,2021,0.565
+572,Zambia,2022,0.569
+573,Zimbabwe,2020,0.554
+574,Zimbabwe,2021,0.549
+575,Zimbabwe,2022,0.55
