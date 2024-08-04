@@ -9,32 +9,46 @@
 
 /* 1. Double-check imported datasets */
 
-SELECT TOP 200 *
-FROM covid_cases
+SELECT
+	TOP 200 *
+FROM
+	covid_cases
 ;
 
-SELECT TOP 200*
-FROM covid_deaths
+SELECT
+	TOP 200*
+FROM
+	covid_deaths
 ;
 
-SELECT TOP 200 *
-FROM covid_recovered
+SELECT
+	TOP 200 *
+FROM
+	covid_recovered
 ;
 
-SELECT TOP 200 *
-FROM covid_vaccinations
+SELECT
+	TOP 200 *
+FROM
+	covid_vaccinations
 ;
 
-SELECT TOP 200 *
-FROM human_development_index
+SELECT
+	TOP 200 *
+FROM
+	human_development_index
 ;
 
-SELECT TOP 200 *
-FROM population
+SELECT
+	TOP 200 *
+FROM
+	population
 ;
 
-SELECT TOP 200 *
-FROM stringency_index
+SELECT
+	TOP 200 *
+FROM
+	stringency_index
 ;
 
 
