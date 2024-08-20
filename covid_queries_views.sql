@@ -16,7 +16,7 @@ FROM
 ;
 
 SELECT
-	TOP 200*
+	TOP 200 *
 FROM
 	covid_deaths
 ;
@@ -61,18 +61,22 @@ WITH active_cases AS (
 	SELECT 
 		cc.country,
 		cc.date,
-		cc.confirmed_cases,
+		cc.cases,
 		cc.[year],
 		cd.deaths,
 		cr.recovered,
-		(cc.confirmed_cases - cd.deaths - cr.recovered) AS active
+		CASE
+			WHEN cr.recovered IS NULL THEN NULL
+			WHEN (cc.cases - cd.deaths - cr.recovered) < 0 THEN NULL
+			ELSE (cc.cases - cd.deaths - cr.recovered)
+		END AS active
 	FROM 
 		covid_cases AS cc
-	INNER JOIN 
+	LEFT JOIN 
 		covid_deaths AS cd
 		ON cc.country = cd.country
 		AND cc.date = cd.date
-	INNER JOIN 
+	LEFT JOIN 
 		covid_recovered AS cr
 		ON cc.country = cr.country
 		AND cc.date = cr.date
@@ -80,11 +84,11 @@ WITH active_cases AS (
 SELECT
 	ac.country,
 	date,
-	confirmed_cases,
+	cases,
 	deaths,
 	recovered,
 	active,
-	(active / pop.population) * 100000 AS active_case_ratio
+	(active / pop.population) * 100000 AS active_case_rate
 FROM
 	active_cases ac
 INNER JOIN
@@ -98,9 +102,9 @@ INNER JOIN
 SELECT
 	cc.country,
 	cc.date,
-	cc.confirmed_cases,
+	cc.cases,
 	cd.deaths,
-	(cd.deaths / NULLIF(cc.confirmed_cases, 0)) * 100000 AS case_fatality_rate
+	(cd.deaths / NULLIF(cc.cases, 0)) * 100000 AS case_fatality_rate
 FROM
 	covid_cases AS cc
 INNER JOIN
@@ -113,7 +117,7 @@ INNER JOIN
 -- Case Incidence Rate (per 100,000): The ratio of new cases to the total population of a country
 SELECT
 	cc.country,
-	cc.[year],
+	cc.date,
 	cc.new_cases_smoothed,
 	pop.population,
 	(cc.new_cases_smoothed / pop.population) * 100000 AS case_incidence_rate
@@ -130,16 +134,17 @@ INNER JOIN
 SELECT
 	cc.country,
 	cc.date,
-	cc.confirmed_cases,
+	cc.cases,
 	cc.new_cases_smoothed,
+	cc.new_cases_growth_rate,
 	cv.people_vaccinated,
 	cv.people_fully_vaccinated,
 	cv.daily_people_vaccinated,
 	cv.daily_people_fully_vaccinated,
 	pop.population,
-	(cc.confirmed_cases / pop.population) * 100000 AS infected_population_ratio,
-	(cv.people_vaccinated / pop.population) * 100000 AS vaccinated_population_ratio ,
-	(cv.people_fully_vaccinated / pop.population) * 100000 AS fully_vaccinated_population_ratio ,
+	(cc.cases / pop.population) * 100000 AS infection_rate,
+	(cv.people_vaccinated / pop.population) * 100000 AS people_vaccinated_rate ,
+	(cv.people_fully_vaccinated / pop.population) * 100000 AS fully_vaccinated_rate ,
 	(cc.new_cases_smoothed / pop.population) * 100000 AS case_incidence_rate,
 	si.stringency_value,
 	hdi.hdi_value
@@ -168,7 +173,7 @@ LEFT JOIN
 WITH global_data AS (
 	SELECT
 		cc.date,
-		SUM(cc.confirmed_cases) AS global_case_count,
+		SUM(cc.cases) AS global_case_count,
 		SUM(cd.deaths) AS global_death_count,
 		SUM(cr.recovered) AS global_recovery_count
 	FROM
@@ -215,6 +220,7 @@ INNER JOIN
 
 
 
+
 /* 3. Creating Views */
 
 -- Global daily COVID cases, deaths, recoveries, and active counts
@@ -222,12 +228,12 @@ CREATE VIEW covid_daily_global AS
 WITH global_data AS (
 	SELECT
 		cc.date,
-		SUM(cc.confirmed_cases) AS global_case_count,
-		SUM(cd.deaths) AS global_death_count,
-		SUM(cr.recovered) AS global_recovery_count,
-		SUM(cc.new_cases_smoothed) AS global_new_cases,
-		SUM(cd.new_deaths_smoothed) AS global_new_deaths,
-		SUM(cr.new_recovered_smoothed) AS global_new_recovered
+		SUM(cc.cases) AS cases,
+		SUM(cd.deaths) AS deaths,
+		SUM(cr.recovered) AS recovered,
+		SUM(cc.new_cases_smoothed) AS new_cases,
+		SUM(cd.new_deaths_smoothed) AS new_deaths,
+		SUM(cr.new_recovered_smoothed) AS new_recovered
 	FROM
 		covid_cases AS cc
 	LEFT JOIN
@@ -243,14 +249,17 @@ WITH global_data AS (
 )
 SELECT
 	date,
-	global_case_count,
-	global_death_count,
-	global_recovery_count,
-	global_new_cases,
-	global_new_deaths,
-	global_new_recovered,
-	(global_case_count - global_death_count - global_recovery_count)  AS global_active,
-	(global_death_count / global_case_count) * 100000 AS global_case_fatality
+	cases,
+	deaths,
+	recovered,
+	new_cases,
+	new_deaths,
+	new_recovered,
+	CASE
+		WHEN recovered IS NULL THEN NULL
+		ELSE (cases - deaths - recovered)  
+	END AS active_cases,
+	(deaths / cases) * 100000 AS case_fatality_rate
 FROM
 	global_data
 ;
@@ -262,7 +271,11 @@ WITH active_cases AS (
 	SELECT
 		cc.country,
 		cc.date,
-		(cc.confirmed_cases - cd.deaths - cr.recovered) AS active
+		CASE
+			WHEN cr.recovered IS NULL THEN NULL
+			WHEN (cc.cases - cd.deaths - cr.recovered) < 0 THEN NULL
+			ELSE (cc.cases - cd.deaths - cr.recovered)
+		END AS active
 	FROM
 		covid_cases AS cc
 	LEFT JOIN
@@ -277,8 +290,9 @@ WITH active_cases AS (
 SELECT
 	cc.country,
 	cc.date,
-	cc.confirmed_cases,
+	cc.cases,
 	cc.new_cases_smoothed,
+	cc.new_cases_growth_rate,
 	cd.deaths,
 	cd.new_deaths_smoothed,
 	cr.recovered,
@@ -295,12 +309,12 @@ SELECT
 	si.stringency_value,
 	hdi.hdi_value,
 	ac.active,
-	(cc.confirmed_cases / pop.population) * 100000 AS infection_rate,
-	(cv.people_vaccinated / pop.population) * 100000 AS people_vaccinated_ratio,
-	(cv.people_fully_vaccinated / pop.population) * 100000 AS fully_vaccinated_ratio,
+	(cc.cases / pop.population) * 100000 AS infection_rate,
+	(cv.people_vaccinated / pop.population) * 100000 AS people_vaccinated_rate,
+	(cv.people_fully_vaccinated / pop.population) * 100000 AS fully_vaccinated_rate,
 	(cc.new_cases_smoothed / pop.population) * 100000 AS case_incidence_rate,
-	(cd.deaths / NULLIF(cc.confirmed_cases, 0)) * 100000 AS case_fatality_rate,
-	(ac.active / pop.population) * 100000 AS active_case_ratio
+	(cd.deaths / NULLIF(cc.cases, 0)) * 100000 AS case_fatality_rate,
+	(ac.active / pop.population) * 100000 AS active_case_rate
 FROM
 	covid_cases AS cc
 INNER JOIN
