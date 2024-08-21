@@ -230,10 +230,16 @@ WITH global_data AS (
 		cc.date,
 		SUM(cc.cases) AS cases,
 		SUM(cd.deaths) AS deaths,
-		SUM(cr.recovered) AS recovered,
+		CASE
+			WHEN COUNT(cr.recovered) < COUNT(cr.country) THEN NULL
+			ELSE SUM(cr.recovered)
+		END AS recovered,
 		SUM(cc.new_cases_smoothed) AS new_cases,
 		SUM(cd.new_deaths_smoothed) AS new_deaths,
-		SUM(cr.new_recovered_smoothed) AS new_recovered
+		CASE
+			WHEN COUNT(cr.new_recovered_smoothed) < COUNT(cr.country) THEN NULL
+			ELSE SUM(cr.new_recovered_smoothed)
+		END AS new_recovered
 	FROM
 		covid_cases AS cc
 	LEFT JOIN
@@ -258,7 +264,7 @@ SELECT
 	CASE
 		WHEN recovered IS NULL THEN NULL
 		ELSE (cases - deaths - recovered)  
-	END AS active_cases,
+	END AS active,
 	(deaths / cases) * 100000 AS case_fatality_rate
 FROM
 	global_data
