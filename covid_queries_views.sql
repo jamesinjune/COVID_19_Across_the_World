@@ -1,9 +1,25 @@
-/* COVID Data Exploration */
+/* 
+============================================================
+COVID Data Exploration
+============================================================
 
--- File Name: covid_queries_views.sql
--- File Description: Queries and views for analyzing COVID data
--- Author: James Li
--- Dependencies: 
+File Name: covid_queries_views.sql
+Description: Queries and views for analyzing COVID data
+Author: James Li
+
+Dependencies:
+------------------------------------------------------------
+    Tables:
+    - dbo.covid_cases
+    - dbo.covid_deaths
+    - dbo.covid_recovered
+    - dbo.covid_vaccinations
+    - dbo.human_development_index
+    - dbo.population
+    - dbo.stringency_index
+
+============================================================
+*/
 
 
 
@@ -50,7 +66,6 @@ SELECT
 FROM
 	stringency_index
 ;
-
 
 
 
@@ -215,7 +230,6 @@ INNER JOIN
 	ON cc.country = si.country
 	AND cc.date = si.date
 ;
-
 
 
 
