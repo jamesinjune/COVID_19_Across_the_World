@@ -3,6 +3,11 @@ Exploration of various COVID-19 metrics, including cases, deaths, recoveries, va
 
 ---
 
+## Visualizations
+**A notebook with all interactive visualizations as well as the datasets used can be accessed [here on Kaggle](https://www.kaggle.com/code/chilokl/covid-19-data-exploration-and-visualization).**
+
+---
+
 ## Project Overview
 This exploration aims to visually demonstrate the spread of COVID-19 over the first 2-3 years of the pandemic, as well as explore key metrics on both global and country-levels. 
 
