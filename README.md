@@ -76,7 +76,7 @@ The global dataset contains daily entries for various COVID-19 measures. Data wa
 - `active_case_rate`: The number of active cases per 100,000 people in a country.
 
 ## Selected Key Insights
-- As we get further into the pandemic, **the HDI of a country seems to have greater association with the infection rate of COVID-19**. Case fatality rate, however, seems to have very little association with HDI.
+- As we get further into the pandemic, **the HDI of a country seems to have greater association with the infection rate of COVID-19**. Being that the y-axis is on a logarithmic scale, this indicates that infection rate could change exponentially as a function of HDI. Case fatality rate, however, seems to have very little association with HDI.
 - Despite having the world's largest population, **after the first few months China does not appear in the top 15 total case count worldwide**.
 
 ## Limitations
