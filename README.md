@@ -4,7 +4,9 @@ Exploration of various COVID-19 metrics, including cases, deaths, recoveries, va
 ---
 
 ## Visualizations
-**A notebook with all interactive visualizations as well as the datasets used can be accessed [here on Kaggle](https://www.kaggle.com/code/chilokl/covid-19-data-exploration-and-visualization).**
+The notebook with all interactive visualizations can be accessed and interacted with [here in a Binder environment](https://mybinder.org/v2/gh/jamesinjune/COVID_19_Data_Exploration/2168db1c3ce959860f0a10c31fd24865dcaf0ed4?urlpath=lab%2Ftree%2FCOVID_Visualizations.ipynb).
+
+**Important: Please run all cells in the notebook before interacting with the charts to ensure that each chart is fully rendered.**
 
 ---
 
