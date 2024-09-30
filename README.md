@@ -26,13 +26,14 @@ This exploration aims to visually demonstrate the spread of COVID-19 over the fi
 
 ### Data Sources and Collection:
 - Raw data can be found [here](https://github.com/jamesinjune/COVID_19_Data_Exploration/tree/main/raw_data).
-- Data cleaning notebooks can be found [here](https://github.com/jamesinjune/COVID_19_Data_Exploration/tree/main/notebooks).
+- Data processing notebooks can be found [here](https://github.com/jamesinjune/COVID_19_Data_Exploration/tree/main/notebooks).
+- SQL was used for data querying and merging the different datasets. The file can be found [here](https://github.com/jamesinjune/COVID_19_Data_Exploration/blob/main/covid_queries_views.sql).
 - Original data sources are as follows:
-    - https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
-    - https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/vaccinations.csv
-    - https://github.com/OxCGRT/covid-policy-tracker/blob/master/data/timeseries/stringency_index_avg.csv
-    - https://data.worldbank.org/indicator/SP.POP.TOTL
-    - https://hdr.undp.org/data-center/documentation-and-downloads
+    - [COVID-19 Time-Series](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series): This data comes from the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University, which collected daily numbers on COVID-19 cases, deaths, and recoveries, among other metrics. As of March 10, 2023, they have ceased to update COVID-19 data.
+    - [Vaccination Dataset](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/vaccinations.csv): The vaccination data comes from the COVID-19 dataset by [Our World in Data](https://ourworldindata.org/) (OWID), an online publication that provides data and statistics into global problems.
+    - [Stringency Index](https://github.com/OxCGRT/covid-policy-tracker/blob/master/data/timeseries/stringency_index_avg.csv): The stringency index data comes from the [Oxford COVID-19 Government Response Tracker](https://www.bsg.ox.ac.uk/research/covid-19-government-response-tracker) (OxCGRT), a University of Oxford project that collected data on various aspects of the pandemic, including a stringency index of countries worldwide.
+    - [Population Dataset](https://data.worldbank.org/indicator/SP.POP.TOTL): Our population data comes from the [World Bank](https://data.worldbank.org/indicator/SP.POP.TOTL), which provides worldwide population numbers on a country-level.
+    - [Human Development Index](https://hdr.undp.org/data-center/documentation-and-downloads): The [United Nations Development Programme](https://hdr.undp.org/data-center/human-development-index#/indicies/HDI) created the HDI, a method of assessing the development of a country, and reports yearly values for every country in the world.
 
 ## Dataset Descriptions:
 COVID-19 data consolidated from multiple data sources at global and country levels.
