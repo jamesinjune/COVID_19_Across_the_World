@@ -62,7 +62,7 @@ The global dataset contains daily entries for various COVID-19 measures. Data wa
 - `people_vaccinated`: Total number of people who have received at least one dose of a registered vaccine.
 - `people_fully_vaccinated`: Total number of people who have received all doses prescribed by vaccination protocol.
 - `total_vaccinations`: Total count of vaccination doses administered.
-- `total_boosters`: Total count of vaccination boosters administered (doses beyond what is prescribed by vaccination protocol)
+- `total_boosters`: Total count of vaccination boosters administered (doses beyond what is prescribed by vaccination protocol).
 - `daily_people_vaccinated`: Number of people receiving their first vaccination on that date.
 - `daily_people_fully_vaccinated`: Number of people completing their vaccination protocol on that date.
 - `daily_vaccinations`: Number of vaccination doses administered on that date (counts any dose).
