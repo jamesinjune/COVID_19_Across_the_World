@@ -14,9 +14,9 @@ Exploration of various COVID-19 metrics, including cases, deaths, recoveries, va
 This exploration aims to visually demonstrate the spread of COVID-19 over the first 2-3 years of the pandemic, as well as explore key metrics on both global and country-levels. 
 
 ### Tools Used
-- Python (pandas) - [Data cleaning process](https://github.com/jamesinjune/COVID_19_Data_Exploration/tree/main/notebooks)
-- SQL Server - [Data querying/merging process](https://github.com/jamesinjune/COVID_19_Data_Exploration/blob/main/covid_queries_views.sql)
-- Python/Streamlit (plotly) - [Visualizations](https://github.com/jamesinjune/COVID_19_Data_Exploration/blob/main/COVID_Visualizations.ipynb)
+- Python (pandas) - [Data cleaning process](notebooks)
+- SQL Server - [Data querying/merging process](covid_queries_views.sql)
+- Python/Streamlit (plotly) - [Visualizations]([COVID_Visualizations.ipynb](https://covid-across-the-world.streamlit.app/))
 
 ---
 
@@ -87,3 +87,33 @@ The global dataset contains daily entries for various COVID-19 measures. Data wa
   - `recovered` count of Uganda increases suddenly on 2021-03-25, resulting in a sudden decrease in `active` count.
   - `recovered` count was missing for countries including the United Kingdom and Serbia. Those countries now have NULLs in `recovered` column.
 - Some calculated fields are not as useful or meaningful for larger countries, especially those calculated using the `population` column, such as `case_incidence_rate`. For countries as large and as spread out as China, we do not have a good understanding of the spread of COVID-19 from this dataset.
+
+## Licenses and Attributions
+This project includes visualizations based on the following datasets:
+1. [JHU CSSE COVID-19 Data](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series)
+    - Source: Johns Hopkins University Center for Systems Science and Engineering
+    - License: CC BY 4.0
+    - Attribution: [JHU CSSE](https://github.com/CSSEGISandData/COVID-19)
+
+2. [Vaccination Dataset](https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/vaccinations.csv)
+    - Source: Our World in Data (OWID)
+    - License: CC BY 4.0
+    - Attribution: [OWID](https://ourworldindata.org/)
+
+3. [Stringency Index](https://github.com/OxCGRT/covid-policy-tracker/blob/master/data/timeseries/stringency_index_avg.csv)
+    - Source: Oxford COVID-19 Government Response Tracker (OxCGRT)
+    - License: CC BY 4.0
+    - Attribution: [OxCGRT](https://github.com/OxCGRT/covid-policy-tracker/tree/master)
+
+4. [World Bank Population Data](https://data.worldbank.org/indicator/SP.POP.TOTL)
+    - Source: The World Bank
+    - License: CC BY 4.0
+    - Attribution: [The World Bank](https://data.worldbank.org/)
+
+5. [Human Development Index (HDI)](https://hdr.undp.org/data-center/documentation-and-downloads)
+    - Source: United Nations Development Programme (UNDP)
+    - License: CC BY 3.0 IGO
+    - Attribution: [UNDP](https://hdr.undp.org/data-center/human-development-index#/indicies/HDI)
+
+### Visualizations License
+The visualizations created in this project are licensed under the MIT License. See [LICENSE](LICENSE) for more information.
