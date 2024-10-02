@@ -1,12 +1,12 @@
-# COVID-19 Exploration
+# [COVID-19 Across the World](https://covid-across-the-world.streamlit.app/)
 Exploration of various COVID-19 metrics, including cases, deaths, recoveries, vaccinations, stringency index, etc.
 
 ---
 
-## Visualizations
-The notebook with all interactive visualizations can be accessed and interacted with [here in a Binder environment](https://mybinder.org/v2/gh/jamesinjune/COVID_19_Data_Exploration/2168db1c3ce959860f0a10c31fd24865dcaf0ed4?urlpath=lab%2Ftree%2FCOVID_Visualizations.ipynb).
+## Application
+[COVID-19 Across the World](https://covid-across-the-world.streamlit.app/) is a data explorer for COVID-19 on both a global scale as well as on the country-level.
 
-**Important: Please run all cells in the notebook before interacting with the charts to ensure that each chart is fully rendered.**
+**NOTE**: The Binder environment is now deprecated. Please visit the Streamlit app linked above to access the data explorer.
 
 ---
 
@@ -16,7 +16,7 @@ This exploration aims to visually demonstrate the spread of COVID-19 over the fi
 ### Tools Used
 - Python (pandas) - [Data cleaning process](https://github.com/jamesinjune/COVID_19_Data_Exploration/tree/main/notebooks)
 - SQL Server - [Data querying/merging process](https://github.com/jamesinjune/COVID_19_Data_Exploration/blob/main/covid_queries_views.sql)
-- Python (plotly) - [Visualizations](https://github.com/jamesinjune/COVID_19_Data_Exploration/blob/main/COVID_Visualizations.ipynb)
+- Python/Streamlit (plotly) - [Visualizations](https://github.com/jamesinjune/COVID_19_Data_Exploration/blob/main/COVID_Visualizations.ipynb)
 
 ---
 
